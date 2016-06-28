@@ -12,7 +12,7 @@
 		414A854A1D22002100BB2505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414A85481D22002100BB2505 /* Main.storyboard */; };
 		414A854C1D22002100BB2505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414A854B1D22002100BB2505 /* Assets.xcassets */; };
 		414A854F1D22002100BB2505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414A854D1D22002100BB2505 /* LaunchScreen.storyboard */; };
-		414A855A1D22002200BB2505 /* LocalReasoningIBOutletsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A85591D22002200BB2505 /* LocalReasoningIBOutletsTests.swift */; };
+		414A85661D220C6900BB2505 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A85651D220C6900BB2505 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,9 @@
 		414A854E1D22002100BB2505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		414A85501D22002200BB2505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		414A85551D22002200BB2505 /* LocalReasoningIBOutletsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalReasoningIBOutletsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		414A85591D22002200BB2505 /* LocalReasoningIBOutletsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalReasoningIBOutletsTests.swift; sourceTree = "<group>"; };
 		414A855B1D22002200BB2505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414A85641D220C6900BB2505 /* LocalReasoningIBOutletsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocalReasoningIBOutletsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		414A85651D220C6900BB2505 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +91,9 @@
 		414A85581D22002200BB2505 /* LocalReasoningIBOutletsTests */ = {
 			isa = PBXGroup;
 			children = (
-				414A85591D22002200BB2505 /* LocalReasoningIBOutletsTests.swift */,
 				414A855B1D22002200BB2505 /* Info.plist */,
+				414A85651D220C6900BB2505 /* ViewControllerTests.swift */,
+				414A85641D220C6900BB2505 /* LocalReasoningIBOutletsTests-Bridging-Header.h */,
 			);
 			path = LocalReasoningIBOutletsTests;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7HP3JD27P4;
 						DevelopmentTeamName = "Lightning Development Company";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 414A85401D22002100BB2505;
 					};
@@ -212,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				414A855A1D22002200BB2505 /* LocalReasoningIBOutletsTests.swift in Sources */,
+				414A85661D220C6900BB2505 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,10 +366,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LocalReasoningIBOutletsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleanswifter.LocalReasoningIBOutletsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocalReasoningIBOutletsTests/LocalReasoningIBOutletsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalReasoningIBOutlets.app/LocalReasoningIBOutlets";
 			};
@@ -376,10 +382,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LocalReasoningIBOutletsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleanswifter.LocalReasoningIBOutletsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocalReasoningIBOutletsTests/LocalReasoningIBOutletsTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalReasoningIBOutlets.app/LocalReasoningIBOutlets";
 			};
